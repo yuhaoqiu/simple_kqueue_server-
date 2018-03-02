@@ -1,6 +1,6 @@
 ## Python kqueue Server
 
-
+~~~
 def servlet(conn):
     head = yield conn.recv(1024)
     print(head)
@@ -18,5 +18,6 @@ def servlet(conn):
     '''
     ret = yield conn.write(bytearray(respond_content, encoding='utf-8'))
     print('lalala')
+~~~
 
 in this def, you can do something for http server
